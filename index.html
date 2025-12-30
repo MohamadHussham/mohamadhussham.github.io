@@ -4,8 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site!</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <h1>This is my GitHub Pages website!</h1>
+<header>
+    <div class="brand">
+      <div class="logo">ProDeveloper</div>
+      <div style="color:var(--muted);font-size:13px">Modern Web & Full‑Stack</div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div style="display:flex;gap:10px;
+    align-items:center">
+      <a class="btn-cta" href="#contact">Hire Me</a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow">Premium Services</div>
+        <h1 id="hero-title">ProDeveloper — <span style="font-weight:700">Design</span> & <span style="font-weight:700">Build</span> Modern Web Experiences</h1>
+        <p>Fast, accessible, and scalable websites with pixel‑perfect UI, production‑ready code, and clear deliverables. I work with startups, agencies, and product teams.</p>
+
+        <div class="hero-actions">
+          <a class="btn-cta" href="#contact">Start a Project</a>
+          <a class="hero-card" href="#projects" style="display:inline-flex;align-items:center;gap:10px">📁 View Work</a>
+        </div>
+
+        <div class="stats" aria-hidden>
+          <div class="stat"><div class="num" data-target="120">0</div><div class="lbl">Projects</div></div>
+          <div class="stat"><div class="num" data-target="85">0</div><div class="lbl">Clients</div></div>
+          <div class="stat"><div class="num" data-target="8">0</div><div class="lbl">Years</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden>
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1200&q=80" alt="Developer working" />
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <h2 id="services-title">What I Do</h2>
+      <p style="text-align:center;color:var(--muted);max-width:80ch;margin:12px auto 28px">End-to-end web development: from UI/UX and frontend to APIs, integrations, and deployments.</p>
+
+      <div class="grid">
+        <div class="svc" role="article">
+          <div style="font-size:22px">🎨</div>
+          <h4>UI / UX Design</h4>
+          <p>Create usable interfaces, prototypes, and design systems.</p>
+        </div>
+        <div class="svc">
+          <div style="font-size:22px">💻</div>
+          <h4>Frontend Development</h4>
+          <p>React, Vue, Svelte, or vanilla — accessible and high performance.</p>
+        </div>
+        <div class="svc">
+          <div style="font-size:22px">🔌</div>
+          <h4>Backend & APIs</h4>
+          <p>Node.js, Express, serverless functions and secure REST/GraphQL APIs.</p>
+        </div>
+        <div class="svc">
+          <div style="font-size:22px">🚀</div>
+          <h4>Performance & SEO</h4>
+          <p>Audit, optimize, and deploy for the best Core Web Vitals and discoverability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <p style="text-align:center;color:var(--muted);max-width:80ch;margin:12px auto 28px">Live demos and snapshots — click a project to open details.</p>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project items with data attributes for modal -->
+        <article class="proj" tabindex="0" role="button" data-title="SaaS Dashboard" data-desc="Admin dashboard with real-time metrics, charts and role-based access." data-img="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=80" alt="SaaS Dashboard screenshot" />
+          <div class="meta"><h3>SaaS Dashboard</h3><p>Realtime charts & analytics</p><div class="tags"><span class="tag">React</span><span class="tag">Realtime</span></div></div>
+        </article>
+
+        <article class="proj" tabindex="0" role="button" data-title="E‑commerce Platform" data-desc="Full storefront with product management, cart and secure checkout." data-img="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1200&q=80" alt="Ecommerce screenshot" />
+          <div class="meta"><h3>E‑commerce Platform</h3><p>Storefront & checkout</p><div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span></div></div>
+        </article>
+
+        <article class="proj" tabindex="0" role="button" data-title="Marketing Landing" data-desc="Conversion-focused landing with analytics and A/B experiment support." data-img="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="Landing screenshot" />
+          <div class="meta"><h3>Marketing Landing</h3><p>High conversion funnel</p><div class="tags"><span class="tag">Gatsby</span><span class="tag">SEO</span></div></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">What Clients Say</h2>
+      <div class="carousel" id="carousel">
+        <div class="card"><strong>Acme Inc.</strong><p class="quote">“ProDeveloper shipped our product on time and made it fast. Highly recommended.”</p></div>
+        <div class="card"><strong>Leaf Studio</strong><p class="quote">“Focused, communicative, and produced stellar UX.”</p></div>
+        <div class="card"><strong>Bright Apps</strong><p class="quote">“Delivered beyond our expectations — great engineering.”</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Start a Project</h2>
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <h3>Let's build something great</h3>
+          <p style="color:var(--muted)">Tell me about your project, timeline, and goals. I'll reply within 24–48 hours.</p>
+          <ul style="color:var(--muted);list-style:none;padding-left:0;margin-top:12px">
+            <li>• Fixed-price or hourly</li>
+            <li>• NDA & secure code</li>
+            <li>• Deployments & monitoring</li>
+          </ul>
+        </div>
+
+        <form class="form contact-card" id="contactForm" action="https://formspree.io/f/maypvwqy" method="POST">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="company" placeholder="Company (optional)" />
+          <textarea name="message" rows="6" placeholder="Project details & budget" required></textarea>
+          <button type="submit">Send message</button>
+          <div id="formMsg" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div id="modal" role="dialog" aria-hidden="true" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.7);z-index:120">
+    <div style="max-width:980px;width:94%;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px;position:relative">
+      <button aria-label="Close" onclick="closeModal()" style="position:absolute;right:12px;top:12px;background:transparent;border:none;color:var(--muted);font-size:20px">✕</button>
+      <div id="modalContent" style="display:grid;grid-template-columns:1fr 360px;gap:16px;align-items:start">
+        <div id="modalMain"><img id="modalImg" src="" alt="Project screenshot" style="width:100%;border-radius:8px" /></div>
+        <div id="modalMeta">
+          <h3 id="modalTitle" style="margin-top:0"></h3>
+          <p id="modalDesc" style="color:var(--muted)"></p>
+          <div style="margin-top:12px"><a id="modalDemo" class="btn-cta" href="#" target="_blank" rel="noopener">Open Demo</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> ProDeveloper • Built with care • <a href="#privacy">Privacy</a>
+  </footer>
 </body>
 </html>
