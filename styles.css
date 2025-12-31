@@ -189,36 +189,5 @@ text-decoration: none;}
 
   img{;display:flex;flex-wrap: wrap;}
   .hero{min-height:90vh;display:flex; flex-wrap: wrap;}
-  nav{
-      display:flex;
-      gap:4px;
-      align-items:center}
-    
-    nav a{text-decoration: none;
-      color:var(--muted);font-weight:600;
-      font-size:8px;padding:8px;border-radius:8px;
-      transition:color var(--transition)}
-    nav a:hover{color:var(--accent)}
-    .brand{
-      font-weight:500;
-      color:var(--accent);
-      font-size:8px;
-      display:flex;
-      align-items:center;
-      gap:4px}
-    .logo{
-      font-weight:800;
-      color:var(--accent);
-      font-size:10px;
-      letter-spacing:2px}
-      btn-cta{
-      background:
-      linear-gradient(90deg,var(--accent),
-      var(--accent-2));
-      color:#fdfdfd;padding:5px 5px;
-      border-radius:10px;font-weight:700;
-      box-shadow:0 6px 18px rgba(124,77,255,0.08);
-    height: 30%;
-  text-align: center;
-text-decoration: none;}
+ 
 }
