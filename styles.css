@@ -87,9 +87,11 @@ text-decoration: none;}
       background:var(--glass);padding:6px 10px;
       border-radius:999px;color:var(--muted);
       font-weight:700;margin-bottom:18px}
-    .hero h1{font-size:48px;line-height:1.02;
+    .hero h1{font-size:32px;line-height:1.02;
       margin:0;
-      background:linear-gradient(90deg,var(--accent),var(--accent-2));color:transparent}
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;
+      border-radius: 5px;
+      padding:15px; }
     .hero p{color:var(--muted);margin:18px 0 28px;max-width:60ch}
 
     .hero-actions{display:flex;gap:12px;align-items:center}
@@ -116,7 +118,7 @@ text-decoration: none;}
       border-radius:12px;
       min-width:30%;text-align:center}
     .stat .num{font-size:20px;font-weight:800;
-      color:rgb(47, 77, 160)}
+      color:white;}
     .stat .lbl{color:var(--muted);font-size:13px}
     .num:hover{
       cursor:progress;
@@ -179,3 +181,44 @@ text-decoration: none;}
       border:none;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041018;font-weight:800;cursor:pointer}
     .form button:hover{
     background: #1948e6;}
+    @media screen and (max-width: 600px) {
+  /* CSS rules to apply when the screen width is 600px or less */
+  body {
+    background-color: lightblue;
+  }
+
+  img{;display:flex;flex-wrap: wrap;}
+  .hero{min-height:90vh;display:flex; flex-wrap: wrap;}
+  nav{
+      display:flex;
+      gap:4px;
+      align-items:center}
+    
+    nav a{text-decoration: none;
+      color:var(--muted);font-weight:600;
+      font-size:8px;padding:8px;border-radius:8px;
+      transition:color var(--transition)}
+    nav a:hover{color:var(--accent)}
+    .brand{
+      font-weight:500;
+      color:var(--accent);
+      font-size:8px;
+      display:flex;
+      align-items:center;
+      gap:4px}
+    .logo{
+      font-weight:800;
+      color:var(--accent);
+      font-size:10px;
+      letter-spacing:2px}
+      btn-cta{
+      background:
+      linear-gradient(90deg,var(--accent),
+      var(--accent-2));
+      color:#fdfdfd;padding:5px 5px;
+      border-radius:10px;font-weight:700;
+      box-shadow:0 6px 18px rgba(124,77,255,0.08);
+    height: 30%;
+  text-align: center;
+text-decoration: none;}
+}
