@@ -191,5 +191,10 @@ text-decoration: none;}
 
   img{;display:flex;flex-wrap: wrap;}
   .hero{min-height:90vh;display:flex; flex-wrap: wrap;}
+   nav{
+      display:flex;
+      flex-wrap: wrap;
+      gap:1px;
+      align-items:center}
  
 }
