@@ -196,5 +196,20 @@ text-decoration: none;}
       flex-wrap: wrap;
       gap:1px;
       align-items:center}
+      contact{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .contact-wrap{display:flex;
+        flex-wrap: wrap;
+      
+      align-items:start}
+    .contact-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px}
+    .form input,.form textarea{width:100%;
+      padding:12px;border-radius:10px;
+      border:1px solid rgba(255,255,255,1);
+      background:transparent;color:inherit;
+      margin-bottom:12px}
+      
  
 }
