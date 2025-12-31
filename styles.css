@@ -185,6 +185,8 @@ text-decoration: none;}
   /* CSS rules to apply when the screen width is 600px or less */
   body {
     background-color: lightblue;
+    width:100%;
+    align-items: center;
   }
 
   img{;display:flex;flex-wrap: wrap;}
